@@ -1,0 +1,12 @@
+//  global styles for whole code:
+
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+html {
+  font-size: 62.5%;
+}

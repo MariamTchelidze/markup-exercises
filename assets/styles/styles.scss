@@ -1,0 +1,17 @@
+@use "./scss_files/abstract/mixins";
+@use "./scss_files/abstract/variables";
+
+// base styles
+@use "./scss_files/base/fonts";
+@use "./scss_files/base/reset";
+
+// components
+@use "./scss_files/components/buttons";
+@use "./scss_files/components/cards";
+@use "./scss_files/components/forms";
+
+// layout
+@use "./scss_files/layout/global";
+@use "./scss_files/layout/header";
+@use "./scss_files/layout/hero";
+@use "./scss_files/layout/footer";

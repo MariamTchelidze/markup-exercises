@@ -1,0 +1,15 @@
+@use "../abstract/mixins" as *;
+@use "../abstract/variables" as *;
+
+.button-login {
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+  border: $primary-btn-border;
+  border-radius: $primary-btn-border-radius;
+  color: $primary-txt-color;
+  font-size: clamp-rem(1rem, 2rem);
+  &:hover {
+    background-color: $primary-btn-hover;
+    font-weight: bold;
+  }
+}
