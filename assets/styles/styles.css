@@ -1,26 +1,38 @@
 @font-face {
   font-family: "LeagueGothic-Regular";
   font-display: swap;
-  src: url("../../../fonts/LeagueGothic-Regular.ttf") format("truetype");
+  src: url("../fonts/LeagueGothic-Regular.ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: "Oswald-Bold";
   font-display: swap;
-  src: url("../../../fonts/Oswald-Bold.ttf") format("truetype");
+  src: url("../fonts/Oswald-Bold.ttf") format("truetype");
   font-weight: 800;
 }
 @font-face {
   font-family: "Oswald-Medium";
   font-display: swap;
-  src: url("../../../fonts/Oswald-Medium.ttf") format("truetype");
+  src: url("../fonts/Oswald-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 @font-face {
   font-family: "Oswald-Regular";
   font-display: swap;
-  src: url("../../../fonts/Oswald-Regular.ttf") format("truetype");
+  src: url("../fonts/Oswald-Regular.ttf") format("truetype");
   font-weight: 400;
+}
+@font-face {
+  font-family: "Geist-Regular";
+  font-display: swap;
+  src: url("../fonts/Geist-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Geist-SemiBold";
+  font-display: swap;
+  src: url("../fonts/Geist-SemiBold.ttf") format("truetype");
+  font-weight: 600;
 }
 /* 1. Use a more-intuitive box-sizing model */
 *,
@@ -215,6 +227,10 @@ input {
   flex: 1;
   min-width: 0;
 }
+.hero-form form .buttons-row {
+  font-size: 2rem;
+  font-family: "Oswald-Medium";
+}
 
 /* ----------------- HEADER  ----------------- */
 header {
@@ -337,12 +353,16 @@ header .header-container .navigation ul li a {
   color: #ffffff;
   font-family: "LeagueGothic-Regular";
   line-height: 0.85;
+  text-wrap: balance;
+  text-transform: uppercase;
 }
 .hero-section .headings h2 {
-  font-size: clamp(1.8rem, 22.4px + 2vw, 3.2rem);
+  width: 18ch;
+  font-size: clamp(1.8rem, 6.8571428571px + 6.8571428571vw, 6.6rem);
   color: #e6be8a;
   font-family: "LeagueGothic-Regular";
-  line-height: 0.85;
+  line-height: 0.95;
+  text-transform: uppercase;
 }
 .hero-section img {
   width: clamp(10rem, 66.2857142857px + 29.2857142857vw, 30.5rem);

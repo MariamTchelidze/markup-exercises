@@ -9,7 +9,6 @@
   padding: 7rem 2.2rem;
   background: $hero-gradient-bg;
   @include flex(space-around, center, column, 8rem);
-
   .headings {
     position: relative;
     @include flex(flex-start, flex-start, column, 1.5rem);
@@ -19,12 +18,16 @@
       color: $primary-txt-color;
       font-family: "LeagueGothic-Regular";
       line-height: 0.85;
+      text-wrap: balance;
+      text-transform: uppercase;
     }
     & h2 {
-      font-size: clamp-rem(1.8rem, 3.2rem);
+      width: 18ch;
+      font-size: clamp-rem(1.8rem, 6.6rem);
       color: $secondary-heading-color;
       font-family: "LeagueGothic-Regular";
-      line-height: 0.85;
+      line-height: 0.95;
+      text-transform: uppercase;
     }
   }
   & img {

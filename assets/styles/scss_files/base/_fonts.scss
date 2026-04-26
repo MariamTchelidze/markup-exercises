@@ -1,24 +1,36 @@
 @font-face {
   font-family: "LeagueGothic-Regular";
   font-display: swap;
-  src: url("../../../fonts/LeagueGothic-Regular.ttf") format("truetype");
+  src: url("../fonts/LeagueGothic-Regular.ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: "Oswald-Bold";
   font-display: swap;
-  src: url("../../../fonts/Oswald-Bold.ttf") format("truetype");
+  src: url("../fonts/Oswald-Bold.ttf") format("truetype");
   font-weight: 800;
 }
 @font-face {
   font-family: "Oswald-Medium";
   font-display: swap;
-  src: url("../../../fonts/Oswald-Medium.ttf") format("truetype");
+  src: url("../fonts/Oswald-Medium.ttf") format("truetype");
   font-weight: 500;
 }
 @font-face {
   font-family: "Oswald-Regular";
   font-display: swap;
-  src: url("../../../fonts/Oswald-Regular.ttf") format("truetype");
+  src: url("../fonts/Oswald-Regular.ttf") format("truetype");
   font-weight: 400;
+}
+@font-face {
+  font-family: "Geist-Regular";
+  font-display: swap;
+  src: url("../fonts/Geist-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Geist-SemiBold";
+  font-display: swap;
+  src: url("../fonts/Geist-SemiBold.ttf") format("truetype");
+  font-weight: 600;
 }
