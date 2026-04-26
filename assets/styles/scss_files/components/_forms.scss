@@ -1,0 +1,51 @@
+@use "../abstract/mixins" as *;
+@use "../abstract/variables" as *;
+@use "../layout/global" as *;
+
+input {
+  border: $primary-btn-border;
+  outline: none;
+  color: $placeholder-color;
+  padding: 1.8rem 1.3rem;
+  border-radius: 2rem;
+}
+.hero-form {
+  width: 100%;
+  max-width: 49.8rem;
+  background-color: $card-bg-color;
+  border-radius: 2rem;
+  padding: 2.7rem 1.6rem;
+  @include flex(center, center, column, 1.5rem);
+  .form-heading {
+    font-family: "Oswald-Medium";
+    font-size: clamp-rem(2.6rem, 2.8rem);
+    color: $primary-dark-txt-color;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+  form {
+    @include flex(center, center, column, 1.5rem);
+    .first-row {
+      width: 100%;
+      @include flex(space-between, center, row, 1rem);
+      & input {
+        flex: 1;
+        min-width: 0;
+      }
+    }
+    .full-row {
+      width: 100%;
+      & input {
+        width: 100%;
+      }
+    }
+    .buttons-row {
+      width: 100%;
+      @include flex(space-between, center, row, 1rem);
+      & button {
+        flex: 1;
+        min-width: 0;
+      }
+    }
+  }
+}

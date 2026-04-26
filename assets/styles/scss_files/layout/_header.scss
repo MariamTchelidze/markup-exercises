@@ -27,12 +27,6 @@ header {
 
       .account-access {
         @include flex(center, center, row, 1rem);
-        & a {
-          &:hover {
-            background-color: $primary-btn-hover;
-            font-weight: bold;
-          }
-        }
       }
     }
     .navigation {

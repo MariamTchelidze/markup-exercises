@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "LeagueGothic-Regular";
+  font-display: swap;
+  src: url("../../../fonts/LeagueGothic-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Oswald-Bold";
+  font-display: swap;
+  src: url("../../../fonts/Oswald-Bold.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Oswald-Medium";
+  font-display: swap;
+  src: url("../../../fonts/Oswald-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Oswald-Regular";
+  font-display: swap;
+  src: url("../../../fonts/Oswald-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -91,25 +115,105 @@ button {
 }
 
 .button-login {
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
   white-space: nowrap;
   border: 1px solid #676767;
   border-radius: 5rem;
   color: #ffffff;
   font-size: clamp(1rem, 11.4285714286px + 1.4285714286vw, 2rem);
+  transition: all 0.3s ease;
 }
 .button-login:hover {
   background-color: #647dff;
-  font-weight: bold;
+}
+
+.step-btn {
+  border-radius: 5rem;
+  padding: 1.5rem 3.5rem;
+  background: transparent;
+  color: #5c63ff;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+.step-btn:hover {
+  background-color: #5c63ff;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 body {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 html {
   font-size: 62.5%;
+}
+
+input {
+  border: 1px solid #676767;
+  outline: none;
+  color: #6f6f6f;
+  padding: 1.8rem 1.3rem;
+  border-radius: 2rem;
+}
+
+.hero-form {
+  width: 100%;
+  max-width: 49.8rem;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  padding: 2.7rem 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.hero-form .form-heading {
+  font-family: "Oswald-Medium";
+  font-size: clamp(2.6rem, 40.6857142857px + 0.2857142857vw, 2.8rem);
+  color: #1c1c1c;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+.hero-form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.hero-form form .first-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.hero-form form .first-row input {
+  flex: 1;
+  min-width: 0;
+}
+.hero-form form .full-row {
+  width: 100%;
+}
+.hero-form form .full-row input {
+  width: 100%;
+}
+.hero-form form .buttons-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.hero-form form .buttons-row button {
+  flex: 1;
+  min-width: 0;
 }
 
 /* ----------------- HEADER  ----------------- */
@@ -150,10 +254,6 @@ header .header-container .account-center .account-access {
   align-items: center;
   flex-direction: row;
   gap: 1rem;
-}
-header .header-container .account-center .account-access a:hover {
-  background-color: #647dff;
-  font-weight: bold;
 }
 header .header-container .navigation {
   width: 100%;
@@ -208,6 +308,52 @@ header .header-container .navigation ul li a {
   }
   header .header-container .account-center {
     order: 3;
+  }
+}
+
+/* ----------------- Hero  ----------------- */
+.hero-section {
+  width: 100%;
+  height: 100%;
+  padding: 7rem 2.2rem;
+  background: linear-gradient(135deg, #0f0f0f 0%, #2a2a2a 50%, #0f0f0f 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 8rem;
+}
+.hero-section .headings {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 60rem;
+}
+.hero-section .headings h1 {
+  font-size: clamp(2rem, -24.6857142857px + 17.7142857143vw, 14.4rem);
+  color: #ffffff;
+  font-family: "LeagueGothic-Regular";
+  line-height: 0.85;
+}
+.hero-section .headings h2 {
+  font-size: clamp(1.8rem, 22.4px + 2vw, 3.2rem);
+  color: #e6be8a;
+  font-family: "LeagueGothic-Regular";
+  line-height: 0.85;
+}
+.hero-section img {
+  width: clamp(10rem, 66.2857142857px + 29.2857142857vw, 30.5rem);
+  position: absolute;
+  left: 50%;
+  bottom: -8rem;
+}
+@media (min-width: 1024px) {
+  .hero-section {
+    flex-direction: row;
+    gap: 2.5rem;
   }
 }
 

@@ -44,6 +44,10 @@
 // clamp mixin
 
 @function clamp-rem($min-rem, $max-rem, $min-vw: 320, $max-vw: 1440) {
+  @if $min-rem > $max-rem {
+    @error "clamp-rem(): min value (#{$min-rem}) must be less than max (#{$max-rem})";
+  }
+
   $min-px: math.div($min-rem, 1rem) * 16;
   $max-px: math.div($max-rem, 1rem) * 16;
 
