@@ -3,6 +3,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* 2. Remove default margin */
@@ -72,4 +74,16 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
 }

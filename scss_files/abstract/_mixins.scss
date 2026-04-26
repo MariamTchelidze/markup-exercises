@@ -1,0 +1,73 @@
+@use "sass:math";
+// layout mixin (grid)
+@mixin grid($mobile-cols: 1, $desktop-cols: null, $rows: auto, $gap: null, $mobile-areas: null, $desktop-areas: null) {
+  display: grid;
+  @if $rows != null {
+    grid-template-rows: $rows;
+  }
+  @if $gap != null {
+    gap: $gap;
+  }
+  // mobile
+  grid-template-columns: repeat($mobile-cols, 1fr);
+  @if $mobile-areas != null {
+    grid-template-areas: $mobile-areas;
+  }
+  // desktop
+  @if $desktop-cols != null {
+    @media (min-width: 992px) {
+      grid-template-columns: repeat($desktop-cols, 1fr);
+      @if $desktop-areas != null {
+        grid-template-areas: $desktop-areas;
+      }
+    }
+  }
+}
+
+// flex mixin
+@mixin flex($justify-content: null, $align-items: null, $direction: null, $gap: null) {
+  display: flex;
+  @if $justify-content != null {
+    justify-content: $justify-content;
+  }
+  @if $align-items != null {
+    align-items: $align-items;
+  }
+  @if $direction != null {
+    flex-direction: $direction;
+  }
+  @if $gap != null {
+    gap: $gap;
+  }
+}
+
+// clamp mixin
+
+@function clamp-rem($min-rem, $max-rem, $min-vw: 320, $max-vw: 1440) {
+  $min-px: math.div($min-rem, 1rem) * 16;
+  $max-px: math.div($max-rem, 1rem) * 16;
+
+  $slope: math.div($max-px - $min-px, $max-vw - $min-vw);
+  $intercept: $min-px - $slope * $min-vw;
+
+  @return clamp(#{$min-rem}, calc(#{$intercept}px + #{$slope * 100}vw), #{$max-rem});
+}
+
+// responsive  mixins:
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}

@@ -1,0 +1,96 @@
+@use "./abstract/mixins" as *;
+@use "./abstract/variables" as *;
+@use "./base/fonts" as *;
+
+// global styles
+body {
+  width: 100%;
+  height: 100vh;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* ----------------- HEADER  ----------------- */
+header {
+  width: 100%;
+  padding: 2rem;
+  background-color: $main-header-bg-color;
+  .header-container {
+    width: 100%;
+    @include flex(center, center, column, 2rem);
+    .top-header {
+      width: 100%;
+      @include flex(space-between, center);
+      padding-bottom: 1rem;
+      border-bottom: $primary-btn-border;
+      & a {
+        img {
+          height: 4rem;
+        }
+      }
+    }
+    .account-center {
+      @include flex(center, center, row, 1rem);
+      & .account-access {
+        @include flex(center, center, row, 1rem);
+        & a {
+          padding: 0.5rem 2rem;
+          white-space: nowrap;
+          border: $primary-btn-border;
+          border-radius: $primary-btn-border-radius;
+          color: $primary-txt-color;
+          font-size: clamp-rem(1rem, 2rem);
+          &:hover {
+            background-color: $primary-btn-hover;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .navigation {
+      width: 100%;
+      @include flex(flex-start, center);
+      & ul {
+        width: 100%;
+        overflow-x: auto;
+        justify-self: flex-start;
+        @include flex(flex-start, center, row, 2rem);
+        & a {
+          white-space: nowrap;
+          color: $primary-txt-color;
+          font-size: clamp-rem(1.8rem, 2.2rem);
+        }
+      }
+    }
+
+    @media (min-width: 1280px) {
+      @include flex(space-between, center, row);
+
+      .top-header {
+        display: contents;
+      }
+
+      .logo-container {
+        order: 1;
+      }
+
+      .navigation {
+        order: 2;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        & ul {
+          justify-content: center;
+          overflow: visible;
+        }
+      }
+
+      .account-center {
+        order: 3;
+      }
+    }
+  }
+}

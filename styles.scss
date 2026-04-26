@@ -1,6 +1,8 @@
-// folders: abstract.
-@use "./abstract/mixins";
-@use "./abstract/variables";
-// folders: base.
-@use "./base/fonts";
-@use "./base/reset";
+// abstract
+@use "./scss_files/abstract/variables";
+@use "./scss_files/abstract/mixins";
+// base styles
+@use "./scss_files/base/reset";
+@use "./scss_files/base/fonts";
+// styles pages:
+@use "./scss_files/main.scss";
