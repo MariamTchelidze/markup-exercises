@@ -321,6 +321,14 @@ input::placeholder {
   font-family: "Oswald-Medium";
 }
 
+.nav_a {
+  transition: all 0.3s ease;
+}
+.nav_a:hover {
+  text-decoration: underline;
+  color: #5c63ff !important;
+}
+
 /* ----------------- HEADER  ----------------- */
 header {
   width: 100%;

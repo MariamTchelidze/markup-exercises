@@ -1,0 +1,11 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+// header hovers navigation:
+.nav_a {
+  transition: all 0.3s ease;
+  &:hover {
+    text-decoration: underline;
+    color: $btn-txt-color !important;
+  }
+}
