@@ -132,6 +132,7 @@ button {
   border: 1px solid #676767;
   border-radius: 5rem;
   color: #ffffff;
+  font-family: "Oswald-Regular";
   font-size: clamp(1rem, 11.4285714286px + 1.4285714286vw, 2rem);
   transition: all 0.3s ease;
 }
@@ -169,6 +170,12 @@ input {
   color: #6f6f6f;
   padding: 1.8rem 1.3rem;
   border-radius: 2rem;
+}
+
+input::placeholder {
+  font-family: "Geist-Regular";
+  color: #6f6f6f;
+  font-size: 1.4rem;
 }
 
 .hero-form {
@@ -294,6 +301,7 @@ header .header-container .navigation ul li a {
   white-space: nowrap;
   color: #ffffff;
   font-size: clamp(1.8rem, 24.2285714286px + 1.4285714286vw, 2.8rem);
+  font-family: "Oswald-Regular";
 }
 @media (min-width: 1280px) {
   header .header-container {
@@ -367,7 +375,7 @@ header .header-container .navigation ul li a {
 .hero-section img {
   width: clamp(10rem, 66.2857142857px + 29.2857142857vw, 30.5rem);
   position: absolute;
-  left: 50%;
+  right: 0;
   bottom: -8rem;
 }
 @media (min-width: 1024px) {

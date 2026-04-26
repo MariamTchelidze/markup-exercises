@@ -8,6 +8,7 @@
   border: $primary-btn-border;
   border-radius: $primary-btn-border-radius;
   color: $primary-txt-color;
+  font-family: "Oswald-Regular";
   font-size: clamp-rem(1rem, 2rem);
   transition: all 0.3s ease;
   &:hover {

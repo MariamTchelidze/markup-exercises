@@ -9,6 +9,11 @@ input {
   padding: 1.8rem 1.3rem;
   border-radius: 2rem;
 }
+input::placeholder {
+  font-family: "Geist-Regular";
+  color: $placeholder-color;
+  font-size: 1.4rem;
+}
 .hero-form {
   width: 100%;
   max-width: 49.8rem;
