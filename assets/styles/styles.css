@@ -23,6 +23,12 @@
   font-weight: 400;
 }
 @font-face {
+  font-family: "Oswald-SemiBold";
+  font-display: swap;
+  src: url("../fonts/Oswald-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
   font-family: "Geist-Regular";
   font-display: swap;
   src: url("../fonts/Geist-Regular.ttf") format("truetype");
@@ -160,7 +166,17 @@ button {
   text-decoration: none;
 }
 
-.info-img {
+.fdb-cta {
+  width: 100%;
+  padding: 0.8rem 6.9rem;
+  color: #ffffff;
+  background-color: #647dff;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+.info-img,
+.img-div {
   padding: 0.9rem;
   border-radius: 0.8rem;
   background-color: rgba(92, 99, 255, 0.25);
@@ -448,6 +464,88 @@ header .header-container .navigation ul li a {
   .hero-section {
     flex-direction: row;
     gap: 2.5rem;
+  }
+}
+
+/* -------------- FDB BONUSES SECTION  -------------- */
+.fdb-bonuses {
+  width: 100%;
+  background-color: #f5f5f7;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.fdb-bonuses .headings-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.fdb-bonuses .headings-container h2 {
+  text-align: center;
+  font-family: "Oswald-Medium";
+  font-size: clamp(3rem, 41.6px + 2vw, 4.4rem);
+  color: #1d1d1d;
+}
+.fdb-bonuses .headings-container p {
+  text-align: center;
+  font-family: "Geist-Regular";
+  font-size: clamp(1.4rem, 20.5714285714px + 0.5714285714vw, 1.8rem);
+  color: #8a8a8a;
+}
+.fdb-bonuses .articles-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2.4rem;
+}
+.fdb-bonuses .articles-container .fdb-information {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4rem;
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #e8e8ed;
+  padding: 9.4rem 3rem 2.5rem 3rem;
+}
+.fdb-bonuses .articles-container .fdb-information .img-div {
+  position: absolute;
+  top: 2.4rem;
+  left: 2.4rem;
+}
+.fdb-bonuses .articles-container .fdb-information .content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.fdb-bonuses .articles-container .fdb-information .content h3 {
+  font-family: "Geist-SemiBold";
+  font-size: 1.8rem;
+  color: #1d1d1d;
+}
+.fdb-bonuses .articles-container .fdb-information .content p {
+  font-family: "Geist-Regular";
+  font-size: 1.4rem;
+  color: #3c3c3e;
+}
+.fdb-bonuses .articles-container .fdb-information .content span {
+  font-family: "Oswald-SemiBold";
+  font-size: 1.6rem;
+  color: #5c63ff;
+}
+@media (min-width: 1024px) {
+  .fdb-bonuses .articles-container {
+    flex-direction: row;
   }
 }
 

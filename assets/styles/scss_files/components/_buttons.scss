@@ -30,3 +30,12 @@
     text-decoration: none;
   }
 }
+// fdb bonuses cards button:
+.fdb-cta {
+  width: 100%;
+  padding: 0.8rem 6.9rem;
+  color: $primary-txt-color;
+  background-color: $primary-btn-bg-color;
+  cursor: pointer;
+  border-radius: 2rem;
+}

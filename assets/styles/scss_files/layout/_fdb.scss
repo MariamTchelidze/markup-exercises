@@ -1,0 +1,65 @@
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+/* -------------- FDB BONUSES SECTION  -------------- */
+.fdb-bonuses {
+  width: 100%;
+  background-color: $primary-section-bg-color;
+  padding: 4rem 2rem;
+  @include flex(center, center, column, 3rem);
+
+  .headings-container {
+    @include flex(center, center, column, 1.2rem);
+    & h2 {
+      text-align: center;
+      font-family: "Oswald-Medium";
+      font-size: clamp-rem(3rem, 4.4rem);
+      color: $secondary-dark-txt-color;
+    }
+    & p {
+      text-align: center;
+      font-family: "Geist-Regular";
+      font-size: clamp-rem(1.4rem, 1.8rem);
+      color: $secondary-light-txt-color;
+    }
+  }
+
+  .articles-container {
+    @include flex(center, center, column, 2.4rem);
+    padding: 2.4rem;
+    .fdb-information {
+      @include flex(center, flex-start, column, 4rem);
+      position: relative;
+      background-color: $card-bg-color;
+      border: 1px solid #e8e8ed;
+      padding: 9.4rem 3rem 2.5rem 3rem;
+
+      .img-div {
+        position: absolute;
+        top: 2.4rem;
+        left: 2.4rem;
+      }
+      .content {
+        @include flex(center, flex-start, column, 1.6rem);
+        & h3 {
+          font-family: "Geist-SemiBold";
+          font-size: 1.8rem;
+          color: $secondary-dark-txt-color;
+        }
+        & p {
+          font-family: "Geist-Regular";
+          font-size: 1.4rem;
+          color: $article-dark-color;
+        }
+        & span {
+          font-family: "Oswald-SemiBold";
+          font-size: 1.6rem;
+          color: $btn-txt-color;
+        }
+      }
+    }
+    @include laptop {
+      flex-direction: row;
+    }
+  }
+}

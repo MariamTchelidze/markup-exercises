@@ -2,7 +2,8 @@
 @use "../abstract/mixins" as *;
 //  small images:
 
-.info-img {
+.info-img,
+.img-div {
   padding: 0.9rem;
   border-radius: 0.8rem;
   background-color: $small-img-bg-color;
