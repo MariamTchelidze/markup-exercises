@@ -31,7 +31,8 @@
   }
 }
 // fdb bonuses cards button:
-.fdb-cta {
+.fdb-cta,
+.cta {
   width: 100%;
   padding: 0.8rem 6.9rem;
   color: $primary-txt-color;
@@ -41,4 +42,5 @@
   font-family: "Oswald-Medium";
   font-size: 1.8rem;
   white-space: nowrap;
+  text-transform: uppercase;
 }

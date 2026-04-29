@@ -4,3 +4,38 @@
 @use "../animations/hovers" as *;
 
 // sports book
+.sports-book {
+  width: 100%;
+  background-color: $primary-section-bg-color;
+  padding: 4rem 2rem;
+  @include flex(center, center, column, 3rem);
+  & .headings {
+    @include flex(center, center, column, 1.2rem);
+  }
+  & .articles-container {
+    @include flex(center, center, column, 2.4rem);
+    padding: 2.4rem;
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    & .sports-book-info {
+      @include flex(center, flex-start, column, 4rem);
+      width: 100%;
+      max-width: 36.8rem;
+      position: relative;
+      background-color: $card-bg-color;
+      border: 1px solid #e8e8ed;
+      padding: 9.4rem 3rem 2.5rem 3rem;
+
+      .img-div {
+        position: absolute;
+        top: 2.4rem;
+        left: 2.4rem;
+      }
+      .content {
+        @include flex(center, flex-start, column, 1.6rem);
+      }
+    }
+  }
+}

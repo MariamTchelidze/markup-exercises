@@ -166,7 +166,8 @@ button {
   text-decoration: none;
 }
 
-.fdb-cta {
+.fdb-cta,
+.cta {
   width: 100%;
   padding: 0.8rem 6.9rem;
   color: #ffffff;
@@ -176,6 +177,7 @@ button {
   font-family: "Oswald-Medium";
   font-size: 1.8rem;
   white-space: nowrap;
+  text-transform: uppercase;
 }
 
 .info-img,
@@ -330,6 +332,53 @@ input::placeholder {
 .nav_a:hover {
   text-decoration: underline;
   color: #5c63ff !important;
+}
+
+.section-heading {
+  text-align: center;
+  font-family: "Oswald-Medium";
+  font-size: clamp(3rem, 41.6px + 2vw, 4.4rem);
+  color: #1d1d1d;
+}
+
+.section-sub-heading {
+  text-align: center;
+  font-family: "Geist-Regular";
+  font-size: clamp(1.4rem, 20.5714285714px + 0.5714285714vw, 1.8rem);
+  color: #8a8a8a;
+}
+
+.card-heading {
+  text-align: center;
+  white-space: nowrap;
+  font-family: "Geist-SemiBold";
+  font-size: 1.8rem;
+  color: #1d1d1d;
+}
+
+.card-description {
+  text-align: center;
+  font-family: "Geist-Regular";
+  font-size: 1.4rem;
+  color: #3c3c3e;
+}
+
+.card-span {
+  font-family: "Oswald-SemiBold";
+  font-size: 1.6rem;
+  color: #5c63ff;
+}
+
+.fdb-heading {
+  font-family: "Geist-SemiBold";
+  font-size: 1.8rem;
+  color: #1d1d1d;
+}
+
+.left_align_p {
+  font-family: "Geist-Regular";
+  font-size: 1.4rem;
+  color: #3c3c3e;
 }
 
 /* ----------------- HEADER  ----------------- */
@@ -496,18 +545,6 @@ header .header-container .navigation ul li a {
   flex-direction: column;
   gap: 1.2rem;
 }
-.fdb-bonuses .headings-container h2 {
-  text-align: center;
-  font-family: "Oswald-Medium";
-  font-size: clamp(3rem, 41.6px + 2vw, 4.4rem);
-  color: #1d1d1d;
-}
-.fdb-bonuses .headings-container p {
-  text-align: center;
-  font-family: "Geist-Regular";
-  font-size: clamp(1.4rem, 20.5714285714px + 0.5714285714vw, 1.8rem);
-  color: #8a8a8a;
-}
 .fdb-bonuses .articles-container {
   display: flex;
   justify-content: center;
@@ -541,26 +578,68 @@ header .header-container .navigation ul li a {
   flex-direction: column;
   gap: 1.6rem;
 }
-.fdb-bonuses .articles-container .fdb-information .content h3 {
-  font-family: "Geist-SemiBold";
-  font-size: 1.8rem;
-  color: #1d1d1d;
-}
-.fdb-bonuses .articles-container .fdb-information .content p {
-  font-family: "Geist-Regular";
-  font-size: 1.4rem;
-  color: #3c3c3e;
-}
-.fdb-bonuses .articles-container .fdb-information .content span {
-  font-family: "Oswald-SemiBold";
-  font-size: 1.6rem;
-  color: #5c63ff;
-}
 @media (min-width: 768px) {
   .fdb-bonuses .articles-container {
     flex-direction: row;
     flex-wrap: wrap;
   }
+}
+
+.sports-book {
+  width: 100%;
+  background-color: #f5f5f7;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.sports-book .headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.sports-book .articles-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2.4rem;
+}
+@media (min-width: 768px) {
+  .sports-book .articles-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.sports-book .articles-container .sports-book-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  max-width: 36.8rem;
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #e8e8ed;
+  padding: 9.4rem 3rem 2.5rem 3rem;
+}
+.sports-book .articles-container .sports-book-info .img-div {
+  position: absolute;
+  top: 2.4rem;
+  left: 2.4rem;
+}
+.sports-book .articles-container .sports-book-info .content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
 /* ----------------- GAME INFO  ----------------- */
@@ -580,18 +659,6 @@ header .header-container .navigation ul li a {
   align-items: center;
   flex-direction: column;
   gap: 1.2rem;
-}
-.games-info .headings h2 {
-  text-align: center;
-  font-family: "Oswald-Medium";
-  font-size: clamp(3rem, 41.6px + 2vw, 4.4rem);
-  color: #1d1d1d;
-}
-.games-info .headings p {
-  text-align: center;
-  font-family: "Geist-Regular";
-  font-size: clamp(1.4rem, 20.5714285714px + 0.5714285714vw, 1.8rem);
-  color: #8a8a8a;
 }
 .games-info .articles {
   display: flex;
@@ -629,24 +696,12 @@ header .header-container .navigation ul li a {
   max-height: auto;
 }
 .games-info .articles .game-info .content {
-  padding: 0 1.4rem 2.4rem 1.4rem;
+  padding: 2.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1.2rem;
-}
-.games-info .articles .game-info .content h3 {
-  text-align: center;
-  font-family: "Geist-SemiBold";
-  font-size: 1.8rem;
-  color: #1d1d1d;
-}
-.games-info .articles .game-info .content p {
-  text-align: center;
-  font-family: "Geist-Regular";
-  font-size: 1.4rem;
-  color: #3c3c3e;
 }
 
 /*# sourceMappingURL=styles.css.map */

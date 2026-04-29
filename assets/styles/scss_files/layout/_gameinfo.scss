@@ -12,18 +12,6 @@
 
   .headings {
     @include flex(center, center, column, 1.2rem);
-    & h2 {
-      text-align: center;
-      font-family: "Oswald-Medium";
-      font-size: clamp-rem(3rem, 4.4rem);
-      color: $secondary-dark-txt-color;
-    }
-    & p {
-      text-align: center;
-      font-family: "Geist-Regular";
-      font-size: clamp-rem(1.4rem, 1.8rem);
-      color: $secondary-light-txt-color;
-    }
   }
 
   //   Article containers:
@@ -50,20 +38,8 @@
         }
       }
       & .content {
-        padding: 0 1.4rem 2.4rem 1.4rem;
+        padding: 2.4rem;
         @include flex(center, center, column, 1.2rem);
-        & h3 {
-          text-align: center;
-          font-family: "Geist-SemiBold";
-          font-size: 1.8rem;
-          color: $secondary-dark-txt-color;
-        }
-        & p {
-          text-align: center;
-          font-family: "Geist-Regular";
-          font-size: 1.4rem;
-          color: $article-dark-color;
-        }
       }
     }
   }

@@ -1,0 +1,52 @@
+@use "../abstract/mixins" as *;
+@use "../abstract/variables" as *;
+@use "../layout/global" as *;
+@use "../animations/hovers" as *;
+
+//sections
+.section-heading {
+  text-align: center;
+  font-family: "Oswald-Medium";
+  font-size: clamp-rem(3rem, 4.4rem);
+  color: $secondary-dark-txt-color;
+}
+.section-sub-heading {
+  text-align: center;
+  font-family: "Geist-Regular";
+  font-size: clamp-rem(1.4rem, 1.8rem);
+  color: $secondary-light-txt-color;
+}
+
+// cards
+
+.card-heading {
+  text-align: center;
+  white-space: nowrap;
+  font-family: "Geist-SemiBold";
+  font-size: 1.8rem;
+  color: $secondary-dark-txt-color;
+}
+.card-description {
+  text-align: center;
+  font-family: "Geist-Regular";
+  font-size: 1.4rem;
+  color: $article-dark-color;
+}
+.card-span {
+  font-family: "Oswald-SemiBold";
+  font-size: 1.6rem;
+  color: $btn-txt-color;
+}
+
+// FDB section
+
+.fdb-heading {
+  font-family: "Geist-SemiBold";
+  font-size: 1.8rem;
+  color: $secondary-dark-txt-color;
+}
+.left_align_p {
+  font-family: "Geist-Regular";
+  font-size: 1.4rem;
+  color: $article-dark-color;
+}
