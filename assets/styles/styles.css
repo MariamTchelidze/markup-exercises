@@ -173,6 +173,9 @@ button {
   background-color: #647dff;
   cursor: pointer;
   border-radius: 2rem;
+  font-family: "Oswald-Medium";
+  font-size: 1.8rem;
+  white-space: nowrap;
 }
 
 .info-img,
@@ -519,6 +522,8 @@ header .header-container .navigation ul li a {
   align-items: flex-start;
   flex-direction: column;
   gap: 4rem;
+  width: 100%;
+  max-width: 36.8rem;
   position: relative;
   background-color: #ffffff;
   border: 1px solid #e8e8ed;
@@ -551,10 +556,97 @@ header .header-container .navigation ul li a {
   font-size: 1.6rem;
   color: #5c63ff;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .fdb-bonuses .articles-container {
     flex-direction: row;
+    flex-wrap: wrap;
   }
+}
+
+/* ----------------- GAME INFO  ----------------- */
+.games-info {
+  width: 100%;
+  background-color: #f5f5f7;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.games-info .headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.games-info .headings h2 {
+  text-align: center;
+  font-family: "Oswald-Medium";
+  font-size: clamp(3rem, 41.6px + 2vw, 4.4rem);
+  color: #1d1d1d;
+}
+.games-info .headings p {
+  text-align: center;
+  font-family: "Geist-Regular";
+  font-size: clamp(1.4rem, 20.5714285714px + 0.5714285714vw, 1.8rem);
+  color: #8a8a8a;
+}
+.games-info .articles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+@media (min-width: 768px) {
+  .games-info .articles {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.games-info .articles {
+  padding: 2.4rem;
+}
+.games-info .articles .game-info {
+  width: 100%;
+  max-width: 27.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: #ffffff;
+  border-radius: 2rem;
+}
+.games-info .articles .game-info .img {
+  width: 100%;
+}
+.games-info .articles .game-info .img img {
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+  max-height: auto;
+}
+.games-info .articles .game-info .content {
+  padding: 0 1.4rem 2.4rem 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.games-info .articles .game-info .content h3 {
+  text-align: center;
+  font-family: "Geist-SemiBold";
+  font-size: 1.8rem;
+  color: #1d1d1d;
+}
+.games-info .articles .game-info .content p {
+  text-align: center;
+  font-family: "Geist-Regular";
+  font-size: 1.4rem;
+  color: #3c3c3e;
 }
 
 /*# sourceMappingURL=styles.css.map */
