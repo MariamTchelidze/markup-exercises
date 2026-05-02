@@ -1,0 +1,39 @@
+@use "../abstract/mixins" as *;
+@use "../abstract/variables" as *;
+@use "../layout/global" as *;
+@use "../animations/hovers" as *;
+
+.featured-games {
+  width: 100%;
+  background-color: $secondary-section-bg-color;
+  padding: 4rem 2rem;
+  @include flex(center, center, column, 3rem);
+  .headings {
+    @include flex(center, center, column, 1.2rem);
+  }
+
+  .content {
+    @include flex(center, flex-start, column, 2.4rem);
+    padding: 2.4rem;
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .featured-game {
+      width: 100%;
+      max-width: 27.9rem;
+      @include flex(flex-start, flex-start, column, 1.2rem);
+      background-color: $card-bg-color;
+      border-radius: 2rem;
+      & img {
+        border-radius: 2rem 2rem 0 0;
+      }
+
+      .description {
+        @include flex(flex-start, flex-start, column, 0.5rem);
+        padding: 0 0 1.6rem 1.6rem;
+      }
+    }
+  }
+}

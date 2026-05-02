@@ -7,11 +7,9 @@
   background-color: $primary-section-bg-color;
   padding: 4rem 2rem;
   @include flex(center, center, column, 3rem);
-
   .headings-container {
     @include flex(center, center, column, 1.2rem);
   }
-
   .articles-container {
     @include flex(center, center, column, 2.4rem);
     padding: 2.4rem;

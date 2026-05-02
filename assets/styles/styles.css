@@ -704,4 +704,58 @@ header .header-container .navigation ul li a {
   gap: 1.2rem;
 }
 
+.featured-games {
+  width: 100%;
+  background-color: #e8e8ed;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.featured-games .headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.featured-games .content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2.4rem;
+}
+@media (min-width: 768px) {
+  .featured-games .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.featured-games .content .featured-game {
+  width: 100%;
+  max-width: 27.9rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: #ffffff;
+  border-radius: 2rem;
+}
+.featured-games .content .featured-game img {
+  border-radius: 2rem 2rem 0 0;
+}
+.featured-games .content .featured-game .description {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 0 1.6rem 1.6rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
