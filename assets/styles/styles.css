@@ -46,6 +46,10 @@
   src: url("../fonts/Geist-Medium.ttf") format("truetype");
   font-weight: 500;
 }
+@font-face {
+  font-family: "Geist-ExtraBold";
+  src: url("../fonts/Geist-ExtraBold.ttf") format("truetype");
+}
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -379,6 +383,33 @@ input::placeholder {
   font-family: "Geist-Regular";
   font-size: 1.4rem;
   color: #3c3c3e;
+}
+
+.white-section-heading {
+  font-family: "Oswald-Medium";
+  font-size: clamp(3rem, 41.6px + 2vw, 4.4rem);
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 1rem;
+}
+
+.white-section-sub-heading {
+  font-family: "Oswald-Medium";
+  font-size: clamp(1.4rem, 20.5714285714px + 0.5714285714vw, 1.8rem);
+  color: #ffffff;
+  text-align: center;
+}
+
+.jackpot-name {
+  font-size: 1.8rem;
+  font-family: "Geist-SemiBold";
+  color: #1d1d1d;
+}
+
+.jackpot-amount {
+  font-size: 4.4rem;
+  font-family: "Geist-ExtraBold";
+  color: #5c63ff;
 }
 
 /* ----------------- HEADER  ----------------- */
@@ -756,6 +787,41 @@ header .header-container .navigation ul li a {
   flex-direction: column;
   gap: 0.5rem;
   padding: 0 0 1.6rem 1.6rem;
+}
+
+.hot-drop-jackpot {
+  width: 100%;
+  padding: 6.4rem 14.4rem;
+  background-image: url("../images/hot-drop-jackpot-bg-img.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+.hot-drop-jackpot .jackpot-headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.hot-drop-jackpot .jackpot-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2.4rem;
+}
+.hot-drop-jackpot .jackpot-cards .card {
+  padding: 5.1rem 6.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #bbbbbb;
+  border-radius: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

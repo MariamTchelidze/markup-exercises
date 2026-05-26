@@ -50,3 +50,28 @@
   font-size: 1.4rem;
   color: $article-dark-color;
 }
+
+// jackpot section
+.white-section-heading {
+  font-family: "Oswald-Medium";
+  font-size: clamp-rem(3rem, 4.4rem);
+  color: $primary-txt-color;
+  text-align: center;
+  letter-spacing: 1rem;
+}
+.white-section-sub-heading {
+  font-family: "Oswald-Medium";
+  font-size: clamp-rem(1.4rem, 1.8rem);
+  color: $primary-txt-color;
+  text-align: center;
+}
+.jackpot-name {
+  font-size: 1.8rem;
+  font-family: "Geist-SemiBold";
+  color: $secondary-dark-txt-color;
+}
+.jackpot-amount {
+  font-size: 4.4rem;
+  font-family: "Geist-ExtraBold";
+  color: $btn-txt-color;
+}

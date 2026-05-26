@@ -2,3 +2,23 @@
 @use "../abstract/variables" as *;
 @use "../layout/global" as *;
 @use "../animations/hovers" as *;
+
+.hot-drop-jackpot {
+  width: 100%;
+  padding: 6.4rem 14.4rem;
+  background-image: url("../images/hot-drop-jackpot-bg-img.png");
+  @include flex(center, center, column, 4rem);
+  .jackpot-headings {
+    @include flex(center, center, column, 3rem);
+  }
+
+  .jackpot-cards {
+    @include flex(center, center, row, 2.4rem);
+    .card {
+      padding: 5.1rem 6.4rem;
+      @include flex(center, center, column, 1.5rem);
+      background-color: $secondary-card-bg-color;
+      border-radius: 1rem;
+    }
+  }
+}
