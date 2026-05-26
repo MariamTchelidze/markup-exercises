@@ -5,20 +5,28 @@
 
 .hot-drop-jackpot {
   width: 100%;
-  padding: 6.4rem 14.4rem;
+  padding: 4rem;
   background-image: url("../images/hot-drop-jackpot-bg-img.png");
-  @include flex(center, center, column, 4rem);
-  .jackpot-headings {
-    @include flex(center, center, column, 3rem);
-  }
-
-  .jackpot-cards {
-    @include flex(center, center, row, 2.4rem);
-    .card {
-      padding: 5.1rem 6.4rem;
-      @include flex(center, center, column, 1.5rem);
-      background-color: $secondary-card-bg-color;
-      border-radius: 1rem;
+  .jackpot-wrapper {
+    @include flex(center, center, column, 4rem);
+    .jackpot-headings {
+      @include flex(center, center, column, 3rem);
+    }
+    .jackpot-cards {
+      // width: 100%;
+      @include flex(center, center, column, 3rem);
+      @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .card {
+        width: 100%;
+        padding: 5.1rem 6.4rem;
+        @include flex(center, center, column, 1.5rem);
+        background-color: $secondary-card-bg-color;
+        border-radius: 1rem;
+        width: clamp-rem(34.8rem, 36.8rem);
+      }
     }
   }
 }

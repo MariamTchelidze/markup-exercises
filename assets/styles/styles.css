@@ -201,6 +201,10 @@ html {
   font-size: 62.5%;
 }
 
+main {
+  width: 100%;
+}
+
 /* ------------------ NAVIGATION SECTION ------------------ */
 .navigation-section {
   padding: 2.4rem 0;
@@ -791,29 +795,38 @@ header .header-container .navigation ul li a {
 
 .hot-drop-jackpot {
   width: 100%;
-  padding: 6.4rem 14.4rem;
+  padding: 4rem;
   background-image: url("../images/hot-drop-jackpot-bg-img.png");
+}
+.hot-drop-jackpot .jackpot-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 4rem;
 }
-.hot-drop-jackpot .jackpot-headings {
+.hot-drop-jackpot .jackpot-wrapper .jackpot-headings {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 3rem;
 }
-.hot-drop-jackpot .jackpot-cards {
+.hot-drop-jackpot .jackpot-wrapper .jackpot-cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
-  gap: 2.4rem;
+  flex-direction: column;
+  gap: 3rem;
 }
-.hot-drop-jackpot .jackpot-cards .card {
+@media (min-width: 768px) {
+  .hot-drop-jackpot .jackpot-wrapper .jackpot-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.hot-drop-jackpot .jackpot-wrapper .jackpot-cards .card {
+  width: 100%;
   padding: 5.1rem 6.4rem;
   display: flex;
   justify-content: center;
@@ -822,6 +835,7 @@ header .header-container .navigation ul li a {
   gap: 1.5rem;
   background-color: #bbbbbb;
   border-radius: 1rem;
+  width: clamp(34.8rem, 547.6571428571px + 2.8571428571vw, 36.8rem);
 }
 
 /*# sourceMappingURL=styles.css.map */
