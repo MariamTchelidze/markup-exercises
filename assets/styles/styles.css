@@ -416,6 +416,30 @@ input::placeholder {
   color: #5c63ff;
 }
 
+.feedback-text {
+  font-family: "Geist-Regular";
+  font-size: 1.4rem;
+  color: #3c3c3e;
+}
+
+.profile {
+  font-family: "Oswald-SemiBold";
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+.name {
+  font-family: "Geist-Medium";
+  color: #1d1d1d;
+  font-size: 1.4rem;
+}
+
+.account-info {
+  font-family: "Geist-Regular";
+  color: #8a8a8a;
+  font-size: 1.2rem;
+}
+
 /* ----------------- HEADER  ----------------- */
 header {
   width: 100%;
@@ -836,6 +860,94 @@ header .header-container .navigation ul li a {
   background-color: #bbbbbb;
   border-radius: 1rem;
   width: clamp(34.8rem, 547.6571428571px + 2.8571428571vw, 36.8rem);
+}
+
+.feedbacks {
+  width: 100%;
+  background-color: #f5f5f7;
+  padding: 6.4rem 14.4rem;
+}
+.feedbacks .feedbacks-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.feedbacks .feedbacks-wrapper .headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.feedbacks .feedbacks-wrapper .feedback-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .feedbacks .feedbacks-wrapper .feedback-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.feedbacks .feedbacks-wrapper .feedback-cards .feedback {
+  width: clamp(34.8rem, 547.6571428571px + 2.8571428571vw, 36.8rem);
+  background-color: #ffffff;
+  padding: 2.7rem;
+  border-radius: 1rem;
+  border: 1px solid #e8e8ed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.feedbacks .feedbacks-wrapper .feedback-cards .feedback .ratings {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.feedbacks .feedbacks-wrapper .feedback-cards .feedback .ratings .stars {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.feedbacks .feedbacks-wrapper .feedback-cards .feedback .ratings .stars img {
+  fill: #5c63ff;
+}
+.feedbacks .feedbacks-wrapper .feedback-cards .feedback .author {
+  width: 100%;
+  padding-top: 2rem;
+  border-top: solid 1px #e8e8ed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.1rem;
+}
+.feedbacks .feedbacks-wrapper .feedback-cards .feedback .author .profile {
+  background-color: #5c63ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 5rem;
+  padding: 1rem 1.2rem;
+}
+.feedbacks .feedbacks-wrapper .feedback-cards .feedback .author .author-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

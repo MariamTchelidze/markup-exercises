@@ -1,0 +1,59 @@
+@use "../abstract/mixins" as *;
+@use "../abstract/variables" as *;
+@use "../layout/global" as *;
+@use "../animations/hovers" as *;
+
+.feedbacks {
+  width: 100%;
+  background-color: $primary-section-bg-color;
+  padding: 6.4rem 14.4rem;
+  .feedbacks-wrapper {
+    width: 100%;
+    @include flex(center, center, column, 3rem);
+    .headings {
+      @include flex(center, center, column, 1.5rem);
+    }
+    .feedback-cards {
+      //   width: 100%;
+      @include flex(center, center, column, 1.5rem);
+      @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .feedback {
+        width: clamp-rem(34.8rem, 36.8rem);
+        background-color: $card-bg-color;
+        padding: 2.7rem;
+        border-radius: 1rem;
+        border: 1px solid #e8e8ed;
+        @include flex(center, flex-start, column, 1rem);
+        .ratings {
+          width: 100%;
+          @include flex(space-between, center, row);
+          .stars {
+            @include flex(flex-start, center, row);
+            & img {
+              fill: $btn-txt-color;
+            }
+          }
+        }
+        .author {
+          width: 100%;
+          padding-top: 2rem;
+          border-top: solid 1px $secondary-section-bg-color;
+          @include flex(flex-start, center, row, 1.1rem);
+          //   background-color: red;
+          .profile {
+            background-color: $account-btn-bg-color;
+            @include flex(center, center, row);
+            border-radius: 5rem;
+            padding: 1rem 1.2rem;
+          }
+          .author-info {
+            @include flex(center, flex-start, column, 0.1rem);
+          }
+        }
+      }
+    }
+  }
+}

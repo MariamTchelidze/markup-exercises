@@ -75,3 +75,25 @@
   font-family: "Geist-ExtraBold";
   color: $btn-txt-color;
 }
+
+// feedback section
+.feedback-text {
+  font-family: "Geist-Regular";
+  font-size: 1.4rem;
+  color: $article-dark-color;
+}
+.profile {
+  font-family: "Oswald-SemiBold";
+  font-size: 1.6rem;
+  color: $primary-txt-color;
+}
+.name {
+  font-family: "Geist-Medium";
+  color: $secondary-dark-txt-color;
+  font-size: 1.4rem;
+}
+.account-info {
+  font-family: "Geist-Regular";
+  color: $secondary-light-txt-color;
+  font-size: 1.2rem;
+}
