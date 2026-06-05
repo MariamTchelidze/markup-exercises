@@ -394,7 +394,6 @@ input::placeholder {
   font-size: clamp(3rem, 41.6px + 2vw, 4.4rem);
   color: #ffffff;
   text-align: center;
-  letter-spacing: 1rem;
 }
 
 .white-section-sub-heading {
@@ -438,6 +437,19 @@ input::placeholder {
   font-family: "Geist-Regular";
   color: #8a8a8a;
   font-size: 1.2rem;
+}
+
+.why-us-heading {
+  font-family: "Geist-SemiBold";
+  font-size: clamp(2rem, 30.1714285714px + 0.5714285714vw, 2.4rem);
+  color: #1d1d1d;
+}
+
+.left-p {
+  font-family: "Geist-Regular";
+  text-align: left;
+  font-size: 1.4rem;
+  color: #5a5a5a;
 }
 
 /* ----------------- HEADER  ----------------- */
@@ -948,6 +960,50 @@ header .header-container .navigation ul li a {
   align-items: flex-start;
   flex-direction: column;
   gap: 0.1rem;
+}
+
+.why-us {
+  width: 100%;
+  background-color: #e8e8ed;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.why-us .headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.why-us .content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2.4rem;
+}
+@media (min-width: 768px) {
+  .why-us .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.why-us .content .card {
+  background-color: #ffffff;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 59.7rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.2rem;
+  border-radius: 0.8rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

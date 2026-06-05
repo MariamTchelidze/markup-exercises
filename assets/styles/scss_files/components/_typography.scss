@@ -9,6 +9,7 @@
   font-family: "Oswald-Medium";
   font-size: clamp-rem(3rem, 4.4rem);
   color: $secondary-dark-txt-color;
+  // white-space: nowrap;
 }
 .section-sub-heading {
   text-align: center;
@@ -57,7 +58,8 @@
   font-size: clamp-rem(3rem, 4.4rem);
   color: $primary-txt-color;
   text-align: center;
-  letter-spacing: 1rem;
+
+  // letter-spacing: 1rem;
 }
 .white-section-sub-heading {
   font-family: "Oswald-Medium";
@@ -96,4 +98,17 @@
   font-family: "Geist-Regular";
   color: $secondary-light-txt-color;
   font-size: 1.2rem;
+}
+
+// Why us section
+.why-us-heading {
+  font-family: "Geist-SemiBold";
+  font-size: clamp-rem(2rem, 2.4rem);
+  color: $secondary-dark-txt-color;
+}
+.left-p {
+  font-family: "Geist-Regular";
+  text-align: left;
+  font-size: 1.4rem;
+  color: $why-us-description-color;
 }
