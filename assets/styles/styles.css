@@ -119,6 +119,35 @@ button {
   cursor: pointer;
 }
 
+/* ----------------- SCROLLBAR ----------------- */
+/* Chrome, Edge, Brave, Opera */
+::-webkit-scrollbar {
+  width: 2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4a4a;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* Firefox */
+html {
+  scrollbar-color: #4a4a4a #1d1d1d;
+  background-color: #1d1d1d;
+}
+
+body {
+  background-color: #1d1d1d;
+}
+
 .button-login {
   padding: 1rem 2rem;
   white-space: nowrap;
@@ -430,6 +459,15 @@ input::placeholder {
   line-height: 2.2rem;
 }
 
+.footer-p,
+.license {
+  font-family: "Geist-Regular";
+  font-size: 1.2rem;
+  color: #ffffff;
+  line-height: 1.8rem;
+  text-align: center;
+}
+
 /* ----------------- HEADER  ----------------- */
 header {
   width: 100%;
@@ -576,6 +614,88 @@ header .header-container .navigation ul li a {
   }
 }
 
+footer {
+  background-color: #1d1d1d;
+  width: 100%;
+  padding: 2rem;
+}
+footer .footer-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 131.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+footer .footer-wrapper nav {
+  width: 100%;
+  overflow-x: auto;
+  padding: 1rem 1.6rem;
+}
+footer .footer-wrapper nav::-webkit-scrollbar {
+  display: none;
+}
+footer .footer-wrapper nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2.4rem;
+}
+footer .footer-wrapper nav a {
+  flex: 0 0 auto;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Geist-Medium";
+  font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+  footer .footer-wrapper nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+}
+footer .footer-wrapper .informational-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.4rem;
+  width: 100%;
+  max-width: 56rem;
+}
+footer .footer-wrapper .payment-methods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+@media (min-width: 1024px) {
+  footer .footer-wrapper .payment-methods {
+    gap: 1.9rem;
+  }
+}
+footer .footer-wrapper .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+@media (min-width: 1024px) {
+  footer .footer-wrapper .socials {
+    gap: 1.9rem;
+  }
+}
+
 /* -------------- FDB BONUSES SECTION  -------------- */
 .fdb-bonuses {
   width: 100%;
@@ -657,7 +777,6 @@ header .header-container .navigation ul li a {
   align-items: center;
   flex-direction: column;
   gap: 2.4rem;
-  padding: 2.4rem;
 }
 @media (min-width: 768px) {
   .sports-book .articles-container {

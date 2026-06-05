@@ -1,0 +1,57 @@
+@use "../abstract/mixins" as *;
+@use "../abstract/variables" as *;
+@use "../layout/global" as *;
+@use "../animations/hovers" as *;
+
+footer {
+  background-color: $primary-footer-bg-color;
+  width: 100%;
+  padding: 2rem;
+  .footer-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 131.3rem;
+    @include flex(center, center, column, 5rem);
+
+    & nav {
+      width: 100%;
+      overflow-x: auto;
+      padding: 1rem 1.6rem;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      @include flex(center, center, row, 2.4rem);
+
+      a {
+        flex: 0 0 auto;
+        color: $primary-txt-color;
+        text-decoration: none;
+        font-family: "Geist-Medium";
+        font-size: 1.4rem;
+      }
+
+      @include tablet {
+        @include flex(center, center, row, 2.4rem);
+        flex-wrap: wrap;
+        overflow-x: visible;
+      }
+    }
+    .informational-text {
+      @include flex(center, center, column, 1.4rem);
+      width: 100%;
+      max-width: 56rem;
+    }
+    .payment-methods {
+      @include flex(center, center, row, 1rem);
+      @include laptop {
+        gap: 1.9rem;
+      }
+    }
+    .socials {
+      @include flex(center, center, row, 1rem);
+      @include laptop {
+        gap: 1.9rem;
+      }
+    }
+  }
+}

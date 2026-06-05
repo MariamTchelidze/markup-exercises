@@ -87,3 +87,32 @@ button {
   background: none;
   cursor: pointer;
 }
+
+/* ----------------- SCROLLBAR ----------------- */
+
+/* Chrome, Edge, Brave, Opera */
+::-webkit-scrollbar {
+  width: 2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4a4a;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* Firefox */
+html {
+  scrollbar-color: #4a4a4a #1d1d1d;
+  background-color: #1d1d1d;
+}
+body {
+  background-color: #1d1d1d;
+}

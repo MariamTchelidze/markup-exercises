@@ -14,7 +14,7 @@
   }
   & .articles-container {
     @include flex(center, center, column, 2.4rem);
-    padding: 2.4rem;
+    // padding: 2.4rem;
     @include tablet {
       flex-direction: row;
       flex-wrap: wrap;

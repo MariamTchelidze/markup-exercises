@@ -113,3 +113,13 @@
   color: $why-us-description-color;
   line-height: 2.2rem;
 }
+
+// Footer-typography
+.footer-p,
+.license {
+  font-family: "Geist-Regular";
+  font-size: 1.2rem;
+  color: $primary-txt-color;
+  line-height: 1.8rem;
+  text-align: center;
+}
