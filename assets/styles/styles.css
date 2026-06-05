@@ -450,6 +450,7 @@ input::placeholder {
   text-align: left;
   font-size: 1.4rem;
   color: #5a5a5a;
+  line-height: 2.2rem;
 }
 
 /* ----------------- HEADER  ----------------- */
@@ -998,12 +999,22 @@ header .header-container .navigation ul li a {
   padding: 2.5rem 2rem;
   width: 100%;
   max-width: 59.7rem;
+  min-height: 57.9rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 0.8rem;
+}
+.why-us .content .card .description {
+  padding-top: 1.6rem;
+  border-top: solid 1px #e8e8ed;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   gap: 1.2rem;
-  border-radius: 0.8rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

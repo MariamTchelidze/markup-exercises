@@ -25,8 +25,15 @@
       padding: 2.5rem 2rem;
       width: 100%;
       max-width: 59.7rem;
-      @include flex(flex-start, flex-start, column, 1.2rem);
+      min-height: 57.9rem;
+      @include flex(flex-start, flex-start, column, 2rem);
       border-radius: 0.8rem;
+
+      & .description {
+        padding-top: 1.6rem;
+        border-top: solid 1px $secondary-section-bg-color;
+        @include flex(flex-start, flex-start, column, 1.2rem);
+      }
     }
   }
 }
