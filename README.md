@@ -1,24 +1,101 @@
-clamp()-ის ზოგადი ჩანაწერი:
-clamp( min, vw, max);
-clamp(ელემენტის მინიმალური სიგანე, vw ზომა, ელემენტის მაქსიმალური სიგანე);
+# 🎰 Ozoon Casino Landing Page
 
-ჩვენს შემთხვევაში: გვაქვს შემდეგი ამოცანა:
-მინიმალური სიგანე არის 218px მობილურზე (217,5 მაგრამ 218 დავამრგვალე);
-მაქსიმალური სიგანე არის 506px დესკტოპზე
+A responsive casino-themed landing page built as a personal front-end practice project using **HTML** and **SCSS**.
 
-ახლა უნდა გამოვთვალოთ vw ზომა: ამისთვის გვჭირდება მინიმალური და მაქსიმალური რეზოლუციების სხვაობა და ჩვენი ელემენტის მინიმალური და მაქსიმალური ზომების სხვაობა:
+🔗 **Live Demo:** https://mariamtchelidze.github.io/Ozoon-Casino/
 
-1. ჩვენი დიზაინის მთლიანი რეზოლუცია არის (1240 + 100 + 100) = 1440px;
-2. სხვაობა მინიმალურ და მაქსიმალურ რეზოლუციებს შორის:
-   მთლიან რეზოლუციას გამოვაკლოთ მობილურის რეზოლუცია (1440px - 320px) = 1120px;
+---
 
-3. სხვაობა <div> ელემენტის მინიმალურ და მაქსიმალურ სიგანეებს შორის:
-   (506px - 218px)= 288px;
-4. ზრდის კოეფიციენტი:
-   ფორმულა: (ელემენტის ზომების სხვაობა / რეზოლუციის ზომების სხვაობა) \* 100:
+## 📖 About The Project
 
-(288px / 1120px) = 0.26
-0.26 \* 100 = 26vw
+This project was created as part of my front-end learning journey to practice building modern, responsive landing pages from scratch.
 
-დავუბრუნდეთ clamp() ის ჩანაწერს და შევიყვანოთ მონაცემები:
-clamp(ელემენტის მინიმალური სიგანე, vw ზომა, ელემენტის მაქსიმალური სიგანე) = clamp(21.8rem, 26vw, 50.6rem);
+The website represents a fictional casino brand and focuses on:
+
+* Responsive layouts
+* SCSS architecture and styling
+* Clean HTML structure
+* UI design implementation
+* Front-end development best practices
+
+> **Note:** This project is created strictly for educational and portfolio purposes. It is not associated with any real gambling company and is not intended for commercial use.
+
+---
+
+## 🚀 Features
+
+* Responsive design
+* Modern casino-style UI
+* Clean and semantic HTML
+* SCSS-based styling
+* Mobile-friendly layout
+* Organised project structure
+
+---
+
+## 🛠️ Built With
+
+* HTML5
+* SCSS (Sass)
+
+---
+
+## 📂 Project Structure
+
+```bash
+Ozoon-Casino/
+│
+├── index.html
+├── css/
+├── scss/
+├── images/
+└── assets/
+```
+
+---
+
+## 🎯 Learning Goals
+
+This project helped me practice:
+
+* HTML page structure
+* SCSS nesting and organization
+* Responsive web design
+* Working with layouts and sections
+* Improving front-end development workflow
+
+---
+
+## 📸 Preview
+
+Visit the live project here:
+
+👉 https://mariamtchelidze.github.io/Ozoon-Casino/
+
+---
+
+## 📚 Educational Purpose
+
+This project was developed solely as a personal learning exercise while studying front-end development.
+
+The website is intended for:
+
+* Learning HTML & SCSS
+* Practising responsive design
+* Building portfolio projects
+
+It is **not intended for commercial use** and does not provide any real gambling services.
+
+---
+
+## 👩‍💻 Author
+
+**Mariam Tchelidze**
+
+GitHub: https://github.com/MariamTchelidze
+
+---
+
+## ⭐ Acknowledgements
+
+Created as part of my continuous front-end development practice and learning journey.
